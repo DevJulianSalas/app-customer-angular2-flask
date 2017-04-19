@@ -1,0 +1,33 @@
+<!--Bootstrap-->
+<div class="container-fluid">
+  <form class="form-inline">
+    <label class="sr-only" for="InlineFormSearch">Name</label>
+    <div id="inputsearch" class="mx-auto input-group mb-2 mr-sm2 mb-sm-0 lg">
+      <div class="input-group-addon" style="width: 10px;">@</div>
+      <input (keyup)="onKey($event)" type="text" class="form-control" id="InLineFormSearch" placeholder="Search by Customer">
+    </div>
+  </form>
+</div>
+<div class="container-fluid">
+  <!--<span *ngFor="let entry of customers">{{ entry["apellido"] }}</span>>-->
+  <div class="row card-container justify-content-start mx-auto">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let customer of customers | paginate: {itemsPerPage:8, currentPage: p}">
+      <div class="card">
+        <div class="card-header">
+          <span><strong>{{ customer['nombre']}} {{ customer['apellido']}}</strong></span>
+          <a href=""><i class="fa fa-address-book-o fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="card-block">
+          <div class="clearfix">
+            <img src="./assets/images/male.png" alt="data">
+              <span class="location"><strong>{{ customer['ubicacion']}}</strong></span>
+              <a href="">select invoice<i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <pagination-controls class="custompagination" (pageChange)="p = $event"></pagination-controls>
+</div>
+<!--*ngFor="let entry of customers"-->

@@ -1,0 +1,5 @@
+*core
+*.npm
+*node_modules
+*.bash_history
+*.log

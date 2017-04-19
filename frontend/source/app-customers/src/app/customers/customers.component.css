@@ -1,0 +1,78 @@
+/**********Input styles ************/
+
+#inputsearch{
+    width: 400px;
+}
+
+/********************************/
+
+#customer{
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.card-container {
+  padding-top: 20px;
+  width: 80%;
+  
+  
+}
+
+.card-header a i {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+
+.card-block a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.address {
+    position: absolute;
+    bottom: 40px;
+    right: 2px;
+    
+}
+
+.location {
+    position: absolute;
+    bottom: 70px;
+    right: 40px;
+    
+    
+}
+
+
+
+.card-deck{
+     margin-left: 10px;
+}
+
+.card {
+    height:150px;
+    width: 250px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.custompagination {
+    background-color: black;
+    text-align: center;
+}
+
+
+
+
+/***
+<i class="fa fa-camera-retro fa-lg"></i> fa-lg
+<i class="fa fa-camera-retro fa-2x"></i> fa-2x
+<i class="fa fa-camera-retro fa-3x"></i> fa-3x
+<i class="fa fa-camera-retro fa-4x"></i> fa-4x
+<i class="fa fa-camera-retro fa-5x"></i> fa-5x
+***/
