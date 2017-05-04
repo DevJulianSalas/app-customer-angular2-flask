@@ -10,6 +10,7 @@ import {Ng2PaginationModule} from 'ng2-pagination';
 import { FooterComponent } from './shared/footer/footer.component';
 
 
+
 // DECORADOR para cargar los componentes 
 @NgModule({
   declarations: [
