@@ -8,6 +8,12 @@ import { AlertModule } from 'ng2-bootstrap';
 import { FilterPipe } from './shared/filter.pipe';
 import {Ng2PaginationModule} from 'ng2-pagination';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ModalComponent } from './shared/modal/modal.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapModalModule } from 'ng2-bootstrap-modal';
+
+
+
 
 
 
@@ -17,7 +23,10 @@ import { FooterComponent } from './shared/footer/footer.component';
     AppComponent,
     CustomersComponent,
     FilterPipe,
-    FooterComponent
+    FooterComponent,
+    ModalComponent,
+    
+    
     // MyNewComponentComponent,
     // SharedComponent
   ],
@@ -27,10 +36,11 @@ import { FooterComponent } from './shared/footer/footer.component';
     HttpModule,
     JsonpModule,
     Ng2PaginationModule,
-    
+    BootstrapModalModule,
+    NgbModule.forRoot(),
     AlertModule.forRoot()  
   ],
-  
+  entryComponents:[ModalComponent],  // sirve para añadir dinamicamente componentes
   providers: [],
   bootstrap: [AppComponent]
 })
